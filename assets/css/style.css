@@ -187,6 +187,11 @@ button {
     color: #588157!important; 
     background-color: #f3eee1; 
 }
+/* To avoid mobile breaking the colors */
+.lang-btn:focus {
+    color: #F4B752!important;
+    background: #588157!important;
+}
 
 /* INRO */
 h1 {
