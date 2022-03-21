@@ -20,7 +20,14 @@ window.onload = function() {
                 msg.innerHTML = "Error!";
                 msg.display.color = "red";
             });
+        msg.style.display = "block"; 
 
-       msg.style.display = "block"; 
+        //clean up
+        document.getElementById("user-name").value = "";
+        document.getElementById("user-email").value = "";
+        document.getElementById("user-text").value = "";
+        setTimeout(() => { 
+            msg.style.display = "none"; 
+        }, 6000);
     });
 }

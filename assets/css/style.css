@@ -407,6 +407,9 @@ form > textarea:focus {
 
 #sent-msg {
     display: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
 }
 
 #contact-info > div {
@@ -462,6 +465,10 @@ form > textarea:focus {
     form > textarea {
         width: 400px;
         height: 150px;
+    }
+
+    #sent-msg {
+        font-size: 40px;
     }
 }
 
