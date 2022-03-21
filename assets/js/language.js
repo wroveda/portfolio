@@ -17,6 +17,7 @@ const englishTXT = document.getElementById("english-txt");
 const currentSiteTXT = document.getElementById("current-site-txt");
 const contactName = document.getElementById("contact-name");
 const contactMSG = document.getElementById("contact-msg");
+const submitTXT = document.getElementById("submit");
 const sentMSG = document.getElementById("sent-msg");
 
 // language buttons
@@ -50,6 +51,7 @@ function switchLang(locale) {
             currentSiteTXT.innerHTML = "site [you are already here]";
             contactName.innerHTML = "Name";
             contactMSG.innerHTML = "Message";
+            submitTXT.value = "Send";
             sentMSG.innerHTML = "Message sent!";
             break;
 
@@ -73,6 +75,7 @@ function switchLang(locale) {
             currentSiteTXT.innerHTML = "site [sei gi&agrave; qui]";
             contactName.innerHTML = "Nome";
             contactMSG.innerHTML = "Messaggio";
+            submitTXT.value = "Invia";
             sentMSG.innerHTML = "Messaggio inviato!";
             break;
     }
