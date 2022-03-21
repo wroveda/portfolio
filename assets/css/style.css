@@ -25,6 +25,8 @@
     src: url("../font/iosevka-aile-bold.ttf") format("truetype");
 }
 
+html { scroll-behavior: smooth }
+
 body {
     font-family: "Iosevka Aile", sans-serif;
     background-color: #f3eee1;
