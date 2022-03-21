@@ -405,6 +405,10 @@ form > textarea:focus {
     margin-top: 0px;
 }
 
+#sent-msg {
+    display: none;
+}
+
 #contact-info > div {
     display: flex;
     align-items: center;

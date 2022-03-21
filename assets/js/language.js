@@ -17,6 +17,7 @@ const englishTXT = document.getElementById("english-txt");
 const currentSiteTXT = document.getElementById("current-site-txt");
 const contactName = document.getElementById("contact-name");
 const contactMSG = document.getElementById("contact-msg");
+const sentMSG = document.getElementById("sent-msg");
 
 // language buttons
 const langEN = document.getElementById("lang-en");
@@ -49,6 +50,7 @@ function switchLang(locale) {
             currentSiteTXT.innerHTML = "site [you are already here]";
             contactName.innerHTML = "Name";
             contactMSG.innerHTML = "Message";
+            sentMSG.innerHTML = "Message sent!";
             break;
 
         case "it":
@@ -71,6 +73,7 @@ function switchLang(locale) {
             currentSiteTXT.innerHTML = "site [sei gi&agrave; qui]";
             contactName.innerHTML = "Nome";
             contactMSG.innerHTML = "Messaggio";
+            sentMSG.innerHTML = "Messaggio inviato!";
             break;
     }
 }
