@@ -15,6 +15,8 @@ const bootstrapTXT = document.getElementById("bootstrap-txt");
 const jsTXT = document.getElementById("js-txt");
 const englishTXT = document.getElementById("english-txt");
 const currentSiteTXT = document.getElementById("current-site-txt");
+const contactName = document.getElementById("contact-name");
+const contactMSG = document.getElementById("contact-msg");
 
 // language buttons
 const langEN = document.getElementById("lang-en");
@@ -45,6 +47,8 @@ function switchLang(locale) {
             jsTXT.innerHTML = "Base knowledge of JavaScript.";
             englishTXT.innerHTML = "Certified by the Cambrige Assessment at C1 CEFR level for the english language."
             currentSiteTXT.innerHTML = "site [you are already here]";
+            contactName.innerHTML = "Name";
+            contactMSG.innerHTML = "Message";
             break;
 
         case "it":
@@ -65,6 +69,8 @@ function switchLang(locale) {
             jsTXT.innerHTML = "Conoscenza base di JavaScript.";
             englishTXT.innerHTML = "Certificato dal Cambrige Assessment al livello C1 CEFR per la lingua inglese."
             currentSiteTXT.innerHTML = "site [sei gi&agrave; qui]";
+            contactName.innerHTML = "Nome";
+            contactMSG.innerHTML = "Messaggio";
             break;
     }
 }

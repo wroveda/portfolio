@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>Walter Roveda - Portfolio</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -114,10 +115,21 @@
             </section>
         </div>
         <div id="contact-info">
-            <a target="_blank" href="https://www.linkedin.com/in/walter-roveda-b98586234">LinkedIn</a><span>|</span><a target="_blank" href="https://github.com/wroveda">Github</a><span>|</span><a href="mailto:walter.roveda@posteo.it">Email</a>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label id="contact-name">Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <label id="contact-msg">Message</label>
+                <textarea name="message"></textarea>
+                <input id="submit" type="submit" value="Send">
+            </form>
+            <div><a target="_blank" href="https://www.linkedin.com/in/walter-roveda-b98586234">LinkedIn</a><span>|</span><a target="_blank" href="https://github.com/wroveda">Github</a></div>
         </div>
         <script src="assets/js/language.js"></script>
         <script src="assets/js/dropdown.js"></script>
+        <script src="assets/js/contact-form.js"></script>
     
 
 </body></html>
